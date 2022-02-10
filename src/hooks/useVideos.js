@@ -11,6 +11,7 @@ const useVideos = (defaultSearchTerm) => {
   const search = async (term) => {
     const response = await axios.get(
       `/.netlify/functions/fetch_videos?term=${term}`
+      //make request from netlify
     );
     setVideos(response.data.data.items);
   };
