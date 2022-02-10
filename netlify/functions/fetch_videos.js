@@ -15,7 +15,6 @@ exports.handler = async function (event, context) {
     });
     return { statusCode: 200, body: JSON.stringify({ data: response.data }) };
   } catch (err) {
-    console.log(err);
     return {
       statusCode: 404,
       body: err.toString(),
