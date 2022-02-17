@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const Route = ({ path, children }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
+  console.log(currentPath);
   useEffect(() => {
     const onLocationChange = () => {
       setCurrentPath(window.location.pathname);

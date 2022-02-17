@@ -4,7 +4,7 @@ import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
 import useVideos from "../../hooks/useVideos";
 
-export default () => {
+const Videos = () => {
   const [selectedVideo, setSelectedVideo] = useState("");
   const { videos, search } = useVideos("Tiger");
   useEffect(() => {
@@ -27,3 +27,4 @@ export default () => {
     </div>
   );
 };
+export default Videos;

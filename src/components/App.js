@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Videos from "./videos";
 import Header from "./header/Header";
 import Route from "./route/Route";
