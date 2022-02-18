@@ -33,7 +33,7 @@ const WikiCard = ({ results }) => {
     );
   });
   return (
-    <div className="ui two column grid" style={{ margin: "10px" }}>
+    <div className="ui two column computer grid" style={{ margin: "10px" }}>
       {renderCard}
     </div>
   );

@@ -43,7 +43,9 @@ const Search = () => {
           />
         </div>
       </div>
-      <WikiCard results={results} />
+      <div className="ui container">
+        <WikiCard results={results} />
+      </div>
     </div>
   );
 };

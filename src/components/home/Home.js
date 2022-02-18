@@ -3,7 +3,12 @@ import React from "react";
 const Home = () => {
   return (
     <div className="ui inverted vertical masthead center aligned segment">
-      <div className="ui text container" style={{ height: "100vw" }}>
+      <div
+        className="ui text container"
+        style={{
+          minHeight: "100vh",
+        }}
+      >
         <h1 className="ui inverted header">React practice project</h1>
 
         <a href="https://github.com/DeltaLF" className="ui huge primary button">
