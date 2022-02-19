@@ -11,7 +11,9 @@ const SearchBar = ({ onTermSubmit }) => {
     <div className="search-bar ui segment">
       <form onSubmit={onFormSubmit} action="" className="ui form">
         <div className="field">
-          <label htmlFor="">Video Search</label>
+          <label htmlFor="">
+            <h1>Video Search</h1>
+          </label>
           <input
             type="text"
             value={term}

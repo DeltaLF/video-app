@@ -8,7 +8,7 @@ const Search = () => {
   const results = useDebounce(term);
 
   return (
-    <div style={{ margin: "10px" }}>
+    <div style={{ margin: "10px" }} className="ui container">
       <SearchBar term={term} onSearchChange={setTerm} />
       <div className="ui container">
         <WikiCard results={results} />

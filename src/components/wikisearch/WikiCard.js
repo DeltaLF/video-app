@@ -8,6 +8,7 @@ class RegExp1 extends RegExp {
 const regExp = new RegExp1("<.*?>", "g");
 
 const WikiCard = ({ results }) => {
+  const cardCount = window.innerWidth > 700 ? "two" : "one";
   const renderCard = results.map((result) => {
     return (
       <div className="column" key={result.pageid}>
@@ -23,7 +24,7 @@ const WikiCard = ({ results }) => {
           <div className="extra content">
             <a
               href={`https://en.wikipedia.org?curid=${result.pageid}`}
-              className="ui inverted green  button small right floated content"
+              className="ui inverted green button small right floated content"
             >
               Go
             </a>
@@ -33,7 +34,10 @@ const WikiCard = ({ results }) => {
     );
   });
   return (
-    <div className="ui two column computer grid" style={{ margin: "10px" }}>
+    <div
+      className={`ui ${cardCount} column computer grid`}
+      style={{ margin: "10px" }}
+    >
       {renderCard}
     </div>
   );

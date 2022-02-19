@@ -10,16 +10,21 @@ const Videos = () => {
   useEffect(() => {
     setSelectedVideo(videos[0]);
   }, [videos]);
-
+  const mainVideoSize = window.innerWidth > 1200 ? "eleven" : "sixteen";
+  const subVideoSize =
+    window.innerWidth > 1200 ? "five wide" : "ten wide centered";
   return (
     <div className="ui container">
       <SearchBar onTermSubmit={search} />
       <div className="ui grid">
         <div className="ui row">
-          <div className="eleven wide column">
+          <div
+            className={`${mainVideoSize} wide column`}
+            style={{ marginBottom: "50px" }}
+          >
             <VideoDetail video={selectedVideo} />
           </div>
-          <div className="five wide column">
+          <div className={`${subVideoSize} column`}>
             <VideoList videos={videos} onVideoSelect={setSelectedVideo} />
           </div>
         </div>
