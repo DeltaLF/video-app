@@ -10,14 +10,25 @@ const Home = () => {
         }}
       >
         <div className="center aligned column">
-          <h1 className="ui inverted header">React practice project</h1>
-          <a
-            href="https://github.com/DeltaLF"
-            className="ui huge primary button"
+          <div
+            style={{
+              minHeight: "100vh",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
-            Go to my github page
-            <i className="github icon" style={{ marginLeft: "10px" }}></i>
-          </a>
+            <div style={{}}></div>
+            <h1 className="ui inverted header">React practice project</h1>
+            <a
+              href="https://github.com/DeltaLF"
+              className="ui huge primary button"
+            >
+              Go to my github page
+              <i className="github icon" style={{ marginLeft: "10px" }}></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
